@@ -70,4 +70,14 @@
     </span>
     </td>
   </tr>
+  <tr>
+    <th><label for="${keys.contextKey}">Status Context:</label></th>
+    <td>
+      <props:textProperty name="${keys.contextKey}" className="longField"/>
+      <span class="error" id="error_${keys.contextKey}"></span>
+      <span class="smallNote">
+        GitHub status context name
+      </span>
+    </td>
+  </tr>
 </table>

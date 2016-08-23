@@ -24,6 +24,7 @@ import org.jetbrains.annotations.NotNull;
  */
 public interface GitHubApiFactory {
   public static final String DEFAULT_URL = "https://api.github.com";
+  public static final String DEFAULT_CONTEXT = "continuous-integration/teamcity";
 
   @NotNull
   GitHubApi openGitHubForUser(@NotNull String url,

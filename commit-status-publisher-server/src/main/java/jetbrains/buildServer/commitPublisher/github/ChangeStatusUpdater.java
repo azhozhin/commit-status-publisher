@@ -96,7 +96,7 @@ public class ChangeStatusUpdater {
 
     final String repositoryOwner = repo.owner();
     final String repositoryName = repo.repositoryName();
-    final String context = "continuous-integration/teamcity";
+    final String context = params.get(C.getContextKey());
     final boolean addComments = false;
 
     final boolean shouldReportOnStart = true;

@@ -2,6 +2,7 @@ package jetbrains.buildServer.commitPublisher.github;
 
 import jetbrains.buildServer.commitPublisher.CommitStatusPublisher;
 import jetbrains.buildServer.commitPublisher.Constants;
+import jetbrains.buildServer.commitPublisher.github.api.GitHubApi;
 import jetbrains.buildServer.parameters.ReferencesResolverUtil;
 import jetbrains.buildServer.serverSide.InvalidProperty;
 import jetbrains.buildServer.serverSide.PropertiesProcessor;
@@ -46,6 +47,7 @@ public class GitHubSettings implements CommitStatusPublisherSettings {
     final Map<String, String> result = new HashMap<String, String>();
     final UpdateChangesConstants C = new UpdateChangesConstants();
     result.put(C.getServerKey(), GitHubApiFactory.DEFAULT_URL);
+    result.put(C.getContextKey(), GitHubApiFactory.DEFAULT_CONTEXT);
     return result;
   }
 

@@ -28,6 +28,7 @@ public class UpdateChangesConstants {
   public String getUserNameKey() { return Constants.GITHUB_USERNAME; }
   public String getPasswordKey() { return Constants.GITHUB_PASSWORD; }
   public String getAccessTokenKey() { return Constants.GITHUB_TOKEN; }
+  public String getContextKey() { return Constants.GITHUB_CONTEXT; }
   public String getAuthenticationTypeKey() { return Constants.GITHUB_AUTH_TYPE;}
   public String getAuthenticationTypePasswordValue() { return GitHubApiAuthenticationType.PASSWORD_AUTH.getValue();}
   public String getAuthenticationTypeTokenValue() { return GitHubApiAuthenticationType.TOKEN_AUTH.getValue();}
